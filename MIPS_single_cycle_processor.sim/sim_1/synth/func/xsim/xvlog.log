@@ -1,0 +1,21 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/synth/func/xsim/tb_MIPS_single_cycle_processor_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module ALU_decoder
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-311] analyzing module MIPS_single_cycle_processor
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module PC_adder
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-311] analyzing module SE
+INFO: [VRFC 10-311] analyzing module adder_32_bit
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-311] analyzing module mux_2_to_1
+INFO: [VRFC 10-311] analyzing module mux_2_to_1__1
+INFO: [VRFC 10-311] analyzing module mux_2_to_1__2
+INFO: [VRFC 10-311] analyzing module mux_2_to_1__3
+INFO: [VRFC 10-311] analyzing module mux_2_to_1__parameterized0
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MIPS_single_cycle_processor

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z007sclg225-1" LaunchTime="1569946555">
+  <File Type="BITSTR-BMM" Name="MIPS_single_cycle_processor_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="MIPS_single_cycle_processor_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="MIPS_single_cycle_processor_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="MIPS_single_cycle_processor_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="MIPS_single_cycle_processor.tcl"/>
+  <File Type="OPT-TIMING" Name="MIPS_single_cycle_processor_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="MIPS_single_cycle_processor_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="MIPS_single_cycle_processor_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="MIPS_single_cycle_processor_reports.tcl"/>
+  <File Type="OPT-DRC" Name="MIPS_single_cycle_processor_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="MIPS_single_cycle_processor.hwdef"/>
+  <File Type="PWROPT-DCP" Name="MIPS_single_cycle_processor_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="MIPS_single_cycle_processor_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="MIPS_single_cycle_processor_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="MIPS_single_cycle_processor_placed.dcp"/>
+  <File Type="PLACE-IO" Name="MIPS_single_cycle_processor_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="MIPS_single_cycle_processor_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="MIPS_single_cycle_processor_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="MIPS_single_cycle_processor_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="MIPS_single_cycle_processor_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="MIPS_single_cycle_processor_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MIPS_single_cycle_processor_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="MIPS_single_cycle_processor.bgn"/>
+  <File Type="PLACE-TIMING" Name="MIPS_single_cycle_processor_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MIPS_single_cycle_processor_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="MIPS_single_cycle_processor.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="MIPS_single_cycle_processor_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="MIPS_single_cycle_processor_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="MIPS_single_cycle_processor_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="MIPS_single_cycle_processor.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="MIPS_single_cycle_processor_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MIPS_single_cycle_processor_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="MIPS_single_cycle_processor_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MIPS_single_cycle_processor_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="MIPS_single_cycle_processor_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="MIPS_single_cycle_processor_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="MIPS_single_cycle_processor.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="MIPS_single_cycle_processor_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="MIPS_single_cycle_processor.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MIPS_single_cycle_processor_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MIPS_single_cycle_processor_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="MIPS_single_cycle_processor.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MIPS_single_cycle_processor_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="MIPS_single_cycle_processor_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="MIPS_single_cycle_processor_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="MIPS_single_cycle_processor_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="MIPS_single_cycle_processor_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="MIPS_single_cycle_processor_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MIPS_single_cycle_processor_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="MIPS_single_cycle_processor_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="MIPS_single_cycle_processor_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="MIPS_single_cycle_processor_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="MIPS_single_cycle_processor_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="MIPS_single_cycle_processor_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MIPS_single_cycle_processor_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MIPS_single_cycle_processor_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="MIPS_single_cycle_processor_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="MIPS_single_cycle_processor_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="MIPS_single_cycle_processor_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="MIPS_single_cycle_processor_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="MIPS_single_cycle_processor_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="MIPS_single_cycle_processor.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="MIPS_single_cycle_processor_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="MIPS_single_cycle_processor.rbt"/>
+  <File Type="BITSTR-NKY" Name="MIPS_single_cycle_processor.nky"/>
+  <File Type="BG-DRC" Name="MIPS_single_cycle_processor.drc"/>
+  <File Type="RDI-RDI" Name="MIPS_single_cycle_processor.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU_decoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PC.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PC_adder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RF.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SE.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/adder_32_bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/main_decoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mux_2_to_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MIPS_single_cycle_processor.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MIPS_single_cycle_processor"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

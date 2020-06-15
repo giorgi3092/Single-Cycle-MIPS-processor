@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Sun Oct  6 00:09:49 2019
+# Process ID: 8936
+# Current directory: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8252 C:\Users\aptsi\Desktop\MIPS_single_cycle_processor\MIPS_single_cycle_processor.xpr
+# Log file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/vivado.log
+# Journal file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.xpr
+update_compile_order -fileset sources_1
+delete_runs "synth_1"
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+open_run impl_2
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/tb_SE_behav.wcfg
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg
+source tb_MIPS_single_cycle_processor.tcl
+launch_simulation
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/tb_SE_behav.wcfg
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg
+source tb_MIPS_single_cycle_processor.tcl
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+current_sim simulation_1
+relaunch_sim
+current_sim simulation_2
+close_sim
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/tb_SE_behav.wcfg
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg
+source tb_MIPS_single_cycle_processor.tcl
+relaunch_sim
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/tb_SE_behav.wcfg
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg
+source tb_MIPS_single_cycle_processor.tcl
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/tb_SE_behav.wcfg
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg
+source tb_MIPS_single_cycle_processor.tcl
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+close_sim
+close_design
+close_design
+launch_simulation
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/tb_SE_behav.wcfg
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg
+source tb_MIPS_single_cycle_processor.tcl
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/tb_SE_behav.wcfg
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg
+source tb_MIPS_single_cycle_processor.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+set_property -name {xsim.simulate.runtime} -value {200ns} -objects [get_filesets sim_1]
+relaunch_sim
+relaunch_sim
+run 20 ns
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Sun Oct  6 00:19:00 2019
+# Process ID: 7540
+# Current directory: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/synth/func/xsim/xsim.dir/tb_MIPS_single_cycle_processor_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/synth/func/xsim/xsim.dir/tb_MIPS_single_cycle_processor_func_synth/webtalk/xsim_webtalk.tcl -notrace

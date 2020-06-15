@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_MIPS_single_cycle_processor_func_synth.v" \
+"../../../../../MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" \
+
+# Do not sort compile order
+nosort

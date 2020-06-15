@@ -1,0 +1,6 @@
+0.6
+2019.1
+Jun 29 2019
+08:46:09
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/synth/func/xsim/tb_MIPS_single_cycle_processor_func_synth.v,1570308242,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v,,ALU;ALU_decoder;CU;DM;IM;MIPS_single_cycle_processor;PC;PC_adder;RF;SE;adder_32_bit;glbl;main_decoder;mux_2_to_1;mux_2_to_1__1;mux_2_to_1__2;mux_2_to_1__3;mux_2_to_1__parameterized0,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v,1569946942,verilog,,,,tb_MIPS_single_cycle_processor,,,,,,,,

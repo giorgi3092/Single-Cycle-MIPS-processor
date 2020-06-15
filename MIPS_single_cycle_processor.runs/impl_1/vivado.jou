@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Tue Oct  1 20:16:03 2019
+# Process ID: 9828
+# Current directory: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.runs/impl_1
+# Command line: vivado.exe -log MIPS_single_cycle_processor.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source MIPS_single_cycle_processor.tcl -notrace
+# Log file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.runs/impl_1/MIPS_single_cycle_processor.vdi
+# Journal file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source MIPS_single_cycle_processor.tcl -notrace

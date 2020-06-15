@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Fri Oct  4 15:40:54 2019
+# Process ID: 14456
+# Current directory: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14024 C:\Users\aptsi\Desktop\MIPS_single_cycle_processor\MIPS_single_cycle_processor.xpr
+# Log file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/vivado.log
+# Journal file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+create_run synth_2 -flow {Vivado Synthesis 2019} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+reset_property board_connections [get_projects MIPS_single_cycle_processor]
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2

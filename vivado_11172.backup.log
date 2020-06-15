@@ -1,0 +1,794 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Tue Oct  1 22:27:49 2019
+# Process ID: 11172
+# Current directory: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8068 C:\Users\aptsi\Desktop\MIPS_single_cycle_processor\MIPS_single_cycle_processor.xpr
+# Log file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/vivado.log
+# Journal file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 737.063 ; gain = 108.906
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_MIPS_single_cycle_processor_behav -key {Behavioral:sim_1:Functional:tb_MIPS_single_cycle_processor} -tclbatch {tb_MIPS_single_cycle_processor.tcl} -view {C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/tb_SE_behav.wcfg} -view {C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/tb_SE_behav.wcfg
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg
+source tb_MIPS_single_cycle_processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_MIPS_single_cycle_processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 768.914 ; gain = 20.391
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 793.457 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 795.121 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 795.121 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 795.121 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 797.543 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 797.543 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 805.813 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/main_decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU_decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/MIPS_single_cycle_processor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/CU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/main_decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU_decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/MIPS_single_cycle_processor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/CU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/main_decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU_decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/MIPS_single_cycle_processor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/CU.v:]
+save_wave_config {C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg}
+set_property -name {xsim.simulate.runtime} -value {100ns} -objects [get_filesets sim_1]
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 836.352 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 905.949 ; gain = 19.711
+run all
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 905.949 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 905.949 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/MIPS_single_cycle_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_single_cycle_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/PC_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/SE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/adder_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/main_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/mux_2_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MIPS_single_cycle_processor
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux_2_to_1(MUX_DATA_WIDTH=32)
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.SE
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_adder
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.mux_2_to_1(MUX_DATA_WIDTH=5)
+Compiling module xil_defaultlib.adder_32_bit
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.ALU_decoder
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.MIPS_single_cycle_processor
+Compiling module xil_defaultlib.tb_MIPS_single_cycle_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MIPS_single_cycle_processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 905.949 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/MIPS_single_cycle_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_single_cycle_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/PC_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/SE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/adder_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/main_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/mux_2_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MIPS_single_cycle_processor
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux_2_to_1(MUX_DATA_WIDTH=32)
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.SE
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_adder
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.mux_2_to_1(MUX_DATA_WIDTH=5)
+Compiling module xil_defaultlib.adder_32_bit
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.ALU_decoder
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.MIPS_single_cycle_processor
+Compiling module xil_defaultlib.tb_MIPS_single_cycle_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MIPS_single_cycle_processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$stop called at time : 195 ns : File "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" Line 42
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 905.949 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$stop called at time : 195 ns : File "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" Line 42
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 905.949 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$stop called at time : 195 ns : File "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" Line 42
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 905.949 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$stop called at time : 195 ns : File "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" Line 42
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 905.949 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$stop called at time : 195 ns : File "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" Line 42
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 905.949 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/MIPS_single_cycle_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_single_cycle_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/PC_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/SE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/adder_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/main_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/mux_2_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MIPS_single_cycle_processor
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.mux_2_to_1(MUX_DATA_WIDTH=32)
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.SE
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_adder
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.mux_2_to_1(MUX_DATA_WIDTH=5)
+Compiling module xil_defaultlib.adder_32_bit
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.ALU_decoder
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.MIPS_single_cycle_processor
+Compiling module xil_defaultlib.tb_MIPS_single_cycle_processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_MIPS_single_cycle_processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$stop called at time : 195 ns : File "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" Line 42
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 905.949 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$stop called at time : 195 ns : File "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" Line 42
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 905.949 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$stop called at time : 195 ns : File "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" Line 42
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 905.949 ; gain = 0.000
+save_wave_config {C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg}
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_MIPS_single_cycle_processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/MIPS_instructions.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/DM_test_data.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_MIPS_single_cycle_processor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim'
+"xelab -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto afe7edc68e9247628fdb898cd409fc3f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_MIPS_single_cycle_processor_behav xil_defaultlib.tb_MIPS_single_cycle_processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$stop called at time : 195 ns : File "C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v" Line 42
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 905.949 ; gain = 0.000
+save_wave_config {C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  1 23:37:18 2019...

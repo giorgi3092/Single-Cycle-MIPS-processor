@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:12:21 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Fri Oct  4 14:35:24 2019
+# Process ID: 13088
+# Current directory: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13268 C:\Users\aptsi\Desktop\MIPS_single_cycle_processor\MIPS_single_cycle_processor.xpr
+# Log file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/vivado.log
+# Journal file: C:/Users/aptsi/Desktop/MIPS_single_cycle_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/tb_SE_behav.wcfg
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg
+source tb_MIPS_single_cycle_processor.tcl
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/tb_SE_behav.wcfg
+open_wave_config C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/imports/MIPS_single_cycle_processor/top_level_config.wcfg
+source tb_MIPS_single_cycle_processor.tcl
+close_sim
+close_sim
+close_design

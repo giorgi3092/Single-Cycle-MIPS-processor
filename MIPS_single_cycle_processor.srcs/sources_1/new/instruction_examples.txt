@@ -1,0 +1,11 @@
+// R_type instruction: {OP(6-bit), rs(5-bit), rt(5-bit), rd(5-bit), shamt(5-bit), funct(6-bit)}		->	000000_00000_00000_00000_00000_000000
+// I_type instruction: {OP(6-bit), rs(5-bit), rt(5-bit), imm (16-bit)} 								->	000000_00000_00000_00000000_00000000
+// J_type instruction: {OP(6-bit), jump_target (26)} 												->	000000_00000000000000000000000000
+
+// lw		->		I_type		->		1000_11ss_ssst_tttt_iiii_iiii_iiii_iiii		->	$t = MEM[$s+offset]						->	lw $t, offset($s)
+// sw		->		I_type		->		1010_11ss_ssst_tttt_iiii_iiii_iiii_iiii		->	MEM[$s+offset] = $t						->	sw $t, offset($s)
+// add		->		R_type		->		0000_00ss_ssst_tttt_dddd_d000_0010_0000		->	$d = $s + $t							->	add $d, $s, $t
+// sub		->		R_type		->		0000_00ss_ssst_tttt_dddd_d000_0010_0010		->	$d = $s - $t							->	sub $d, $s, $t
+// beq		->		I_type		->		0001_00ss_ssst_tttt_iiii_iiii_iiii_iiii		->	PC=($s==$t) ? PC+1+offset : PC+1		->	beq %s, $t, offset
+// slt		->		R_type		->		0000_00ss_ssst_tttt_dddd_d000_0010_1010		->	$d = ($s<$t) ? 1 : 0					->	slt $d, $s, $t
+// J		->		J_type		->		0000_10ii_iiii_iiii_iiii_iiii_iiii_iiii		-> 	PC = {PC[31:26], Jaddr}					->	J target

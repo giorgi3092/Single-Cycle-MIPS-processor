@@ -1,0 +1,25 @@
+0.6
+2019.1
+Jun 29 2019
+08:46:09
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_ALU.v,1569766144,verilog,,,,tb_ALU,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_DM.v,1569761386,verilog,,,,tb_DM,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_IM.v,1569758183,verilog,,,,tb_IM,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v,1570311919,verilog,,,,tb_MIPS_single_cycle_processor,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_PC_adder.v,1569359543,verilog,,,,tb_PC_adder,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_RF.v,1569750666,verilog,,,,tb_RF,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_SE.v,1569358530,verilog,,,,tb_SE,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU.v,1569765933,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU_decoder.v,,ALU,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/ALU_decoder.v,1569945423,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/CU.v,,ALU_decoder,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/CU.v,1569938248,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/DM.v,,CU,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/DM.v,1570190211,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/IM.v,,DM,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/IM.v,1570306962,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/MIPS_single_cycle_processor.v,,IM,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/MIPS_single_cycle_processor.v,1570306680,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/PC.v,,MIPS_single_cycle_processor,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/PC.v,1569360314,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/PC_adder.v,,PC,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/PC_adder.v,1569949459,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/RF.v,,PC_adder,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/RF.v,1570308313,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/SE.v,,RF,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/SE.v,1569358596,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/adder_32_bit.v,,SE,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/adder_32_bit.v,1569797028,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/main_decoder.v,,adder_32_bit,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/main_decoder.v,1569945389,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/mux_2_to_1.v,,main_decoder,,,,,,,,
+C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sources_1/new/mux_2_to_1.v,1569794874,verilog,,C:/Users/aptsi/Desktop/MIPS_single_cycle_processor/MIPS_single_cycle_processor.srcs/sim_1/new/tb_MIPS_single_cycle_processor.v,,mux_2_to_1,,,,,,,,

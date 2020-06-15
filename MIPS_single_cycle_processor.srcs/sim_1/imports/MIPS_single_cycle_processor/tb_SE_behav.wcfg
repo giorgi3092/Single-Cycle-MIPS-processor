@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_MIPS_single_cycle_processor_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_MIPS_single_cycle_processor" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="12040001fs"></ZoomEndTime>
+      <Cursor1Time time="2000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="200"></NameColumnWidth>
+      <ValueColumnWidth column_width="132"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/tb_MIPS_single_cycle_processor/MIPS_single_cycle_processor_instance/i_clk" type="logic">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MIPS_single_cycle_processor/MIPS_single_cycle_processor_instance/PC_instance/pc_value" type="array">
+      <obj_property name="ElementShortName">pc_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_value[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MIPS_single_cycle_processor/MIPS_single_cycle_processor_instance/Inst" type="array">
+      <obj_property name="ElementShortName">Inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MIPS_single_cycle_processor/MIPS_single_cycle_processor_instance/IM_instance/IM_ram" type="array">
+      <obj_property name="ElementShortName">IM_ram[0:512][31:0]</obj_property>
+      <obj_property name="ObjectShortName">IM_ram[0:512][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MIPS_single_cycle_processor/MIPS_single_cycle_processor_instance/RF_instance/Register_File" type="array">
+      <obj_property name="ElementShortName">Register_File[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">Register_File[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MIPS_single_cycle_processor/MIPS_single_cycle_processor_instance/DM_instance/DM_ram" type="array">
+      <obj_property name="ElementShortName">DM_ram[0:512][31:0]</obj_property>
+      <obj_property name="ObjectShortName">DM_ram[0:512][31:0]</obj_property>
+   </wvobject>
+</wave_config>
